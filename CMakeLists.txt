@@ -35,6 +35,10 @@ src/relpose_generalized_affine.cpp
 src/translation.cpp
 )
 
+target_include_directories(multi-camera-motion
+		PUBLIC
+		ext/polynomial)
+
 add_subdirectory( test )
 
 install(DIRECTORY include/multi-camera-motion DESTINATION include/multi-camera-motion
